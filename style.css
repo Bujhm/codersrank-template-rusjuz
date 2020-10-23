@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Ribeye+Marrow');
 body {
     margin: 0;
     margin-top: 50px;
@@ -54,6 +55,7 @@ footer {
 
 #hero h1 {
     font-size: 3em;
+    font-family: Ribeye Marrow;
 }
 
 section h2 {
