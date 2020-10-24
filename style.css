@@ -1,86 +1,123 @@
-@import url('https://fonts.googleapis.com/css?family=Ribeye+Marrow');
+@import url("https://fonts.googleapis.com/css?family=Ribeye+Marrow");
 body {
-    margin: 0;
-    margin-top: 50px;
-    font-family: sans-serif;
+  margin: 0;
+  margin-top: 50px;
+  font-family: sans-serif;
 }
 
 header {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    line-height: 50px;
-    background-color: #eee;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  line-height: 50px;
+  background-color: #eee;
+  border-bottom: 1px solid black;
 }
 
 header * {
-    display: inline;
-    height: 50px;
+  display: inline;
+  height: 50px;
 }
 
 header ul {
-    padding: 0;
+  padding: 0;
 }
 
 header li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
+/* section:first-of-type{
+  border-top: 1px solid black;
+} */
 section {
-    height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    background-size: cover; /* Add this line */
-    background-position: center center; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
-    background-attachment: fixed; /* Add this line */
+  /* border-top: 1px solid white; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-size: cover; /* Add this line */
+  background-position: center center; /* Add this line */
+  background-repeat: no-repeat; /* Add this line */
+  background-attachment: fixed; /* Add this line */
 }
 
 #hero .profile-img {
-    width: 300px;
-    border-radius: 50%;
+  width: 300px;
+  border-radius: 50%;
 }
 
 footer {
-    text-align: center;
-    padding: 50px;
+  text-align: center;
+  padding: 50px;
 }
 
 #hero h1 {
-    font-size: 3em;
-    font-family: Ribeye Marrow;
+  font-size: 3em;
+  font-family: Ribeye Marrow;
 }
 
 section h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
+  color:white;
 }
 
 section h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
+  color:white;
+}
+section#about ul li {
+  list-style: square;
+  text-align: left;
+}
+
+section#contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section#contact li {
+  list-style: none;
+}
+
+section#contact li:not(:first-child):before {
+  content: "|";
+  padding: 10px;
 }
 
 header a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 /* Add everything below here */
 
 #hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg");
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+  background-image: linear-gradient(
+      rgba(0, 0, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg");
 }
 
 #contact {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
+  background-image: linear-gradient(
+      rgba(123, 123, 123, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url("https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg");
 }
